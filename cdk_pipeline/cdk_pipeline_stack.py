@@ -2,11 +2,11 @@ from aws_cdk import (
     core as cdk,
     aws_codebuild as codebuild,
     aws_codecommit as codecommit,
+    aws_s3 as s3,
     pipelines
 )
 
 class CdkPipelineStack(cdk.Stack):
-
     def __init__(self, scope: cdk.Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
@@ -28,3 +28,14 @@ class CdkPipelineStack(cdk.Stack):
                         repository=code_commit_source,
                         branch="main")
             ))
+        pipeline.add_stage(MyApp(self,"Dev"))
+
+class S3Bucket(cdk.Stack):
+    def __init__(self, scope, id):
+        super().__init__(scope, id)
+        s3.Bucket(self, id="Bucket")
+
+class MyApp(cdk.Stage):
+    def __init__(self, scope, id, *, env=None, outdir=None):
+        super().__init__(scope, id, env=env, outdir=outdir)
+        bucket_stack = S3Bucket(self, "NucketStack")
