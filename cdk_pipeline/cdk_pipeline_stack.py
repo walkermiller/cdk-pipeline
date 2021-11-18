@@ -9,9 +9,9 @@ class CdkPipelineStack(cdk.Stack):
 
     def __init__(self, scope: cdk.Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        code_commit_source = codecommit.Repository.from_repository_name(self, "ExRepo", repository_name=self.node.try_get_context('repo')) if codecommit.Repository.from_repository_name(self, "TmpRepo", repository_name=self.node.try_get_context('repo')) else codecommit.Repository(self, "NewRepo", repo_name=self.node.try_get_context('repo'))
 
-        
+        ## Use an existing repo if it exists, otherwise create a new one
+        code_commit_source = codecommit.Repository(self, "NewRepo", repository_name=self.node.try_get_context('repo'))
 
         pipeline = pipelines.CodePipeline(self,
             id='Pipeline',
