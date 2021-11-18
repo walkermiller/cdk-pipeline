@@ -15,6 +15,7 @@ class CdkPipelineStack(cdk.Stack):
 
         pipeline = pipelines.CodePipeline(self,
             id='Pipeline',
+            pipeline_name=self.node.try_get_context('repo'),
             self_mutation=False,
             synth= pipelines.ShellStep(
                 id="cdksynth",
