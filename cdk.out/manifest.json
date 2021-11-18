@@ -1,0 +1,563 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkPipelineStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkPipelineStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkPipelineStack/ExRepo/CdkPipelineStackPipeline636E4124-main-EventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExRepoCdkPipelineStackPipeline636E4124mainEventRule045799C3",
+            "trace": [
+              "new Rule (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events/lib/rule.js:35:26)",
+              "Import.onEvent (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:30:22)",
+              "Import.onStateChange (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Import.onReferenceUpdated (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Import.onCommit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeCommitSource.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline-source.js:115:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketAEA9A052",
+            "trace": [
+              "new Bucket (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-s3/lib/bucket.js:586:26)",
+              "new Pipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:206:27)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:103:30)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleB27FAA37",
+            "trace": [
+              "new Role (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Pipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:216:35)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:103:30)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicy7BDC1ABB",
+            "trace": [
+              "new Policy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Bucket.grant (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-s3/lib/bucket.js:442:31)",
+              "Bucket.grantReadWrite (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-s3/lib/bucket.js:335:21)",
+              "new Pipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:229:29)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:103:30)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Pipeline9850B417",
+            "trace": [
+              "new Pipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:219:30)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:103:30)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Source/testrepo/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourcetestrepoCodePipelineActionRoleCAC33B70",
+            "trace": [
+              "new Role (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeCommitSource.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline-source.js:115:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Source/testrepo/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourcetestrepoCodePipelineActionRoleDefaultPolicyA84514A1",
+            "trace": [
+              "new Policy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToPrincipal (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/grant.js:90:65)",
+              "Function.addToPrincipalOrResource (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/grant.js:45:30)",
+              "Bucket.grant (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-s3/lib/bucket.js:442:31)",
+              "Bucket.grantReadWrite (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-s3/lib/bucket.js:335:21)",
+              "CodeCommitSourceAction.bound (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:97:24)",
+              "CodeCommitSourceAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeCommitSource.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline-source.js:115:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRole96280D9B",
+            "trace": [
+              "new Role (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Object.singletonEventRole (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events-targets/lib/util.js:39:18)",
+              "CodePipeline.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:33:52)",
+              "Rule.addTarget (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events/lib/rule.js:88:36)",
+              "Import.onEvent (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:35:14)",
+              "Import.onStateChange (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Import.onReferenceUpdated (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Import.onCommit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeCommitSource.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline-source.js:115:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRoleDefaultPolicy62809D8F",
+            "trace": [
+              "new Policy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events-targets/lib/util.js:43:22)",
+              "CodePipeline.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:33:52)",
+              "Rule.addTarget (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-events/lib/rule.js:88:36)",
+              "Import.onEvent (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:35:14)",
+              "Import.onStateChange (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:44:27)",
+              "Import.onReferenceUpdated (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:66:27)",
+              "Import.onCommit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:116:27)",
+              "CodeCommitSourceAction.bound (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:88:35)",
+              "CodeCommitSourceAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeCommitSource.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline-source.js:115:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Build/cdksynth/CdkBuildProject/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildcdksynthCdkBuildProjectRoleC6B59477",
+            "trace": [
+              "new Role (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Project (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/project.js:311:35)",
+              "new PipelineProject (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "CodeBuildFactory.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/_codebuild-factory.js:145:25)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Build/cdksynth/CdkBuildProject/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildcdksynthCdkBuildProjectRoleDefaultPolicy768F56FF",
+            "trace": [
+              "new Policy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "PipelineProject.addToRolePolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/project.js:60:23)",
+              "new Project (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/project.js:396:14)",
+              "new PipelineProject (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "CodeBuildFactory.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/_codebuild-factory.js:145:25)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Build/cdksynth/CdkBuildProject/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildcdksynthCdkBuildProject07F73CEA",
+            "trace": [
+              "new Project (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/project.js:353:26)",
+              "new PipelineProject (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:19:9)",
+              "CodeBuildFactory.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/_codebuild-factory.js:145:25)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Build/cdksynth/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildcdksynthCodePipelineActionRoleBE944F9C",
+            "trace": [
+              "new Role (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "Pipeline.getRoleForAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:501:26)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:345:33)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeBuildFactory.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/_codebuild-factory.js:167:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/Pipeline/Pipeline/Build/cdksynth/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildcdksynthCodePipelineActionRoleDefaultPolicyCFA15BE7",
+            "trace": [
+              "new Policy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Role.addToPolicy (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-iam/lib/role.js:221:21)",
+              "CodeBuildAction.bound (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:78:22)",
+              "CodeBuildAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/action.js:104:21)",
+              "RichAction.bind (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:349:41)",
+              "Stage.attachActionToPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:124:31)",
+              "Stage.addAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:71:33)",
+              "CodeBuildFactory.produceAction (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/_codebuild-factory.js:167:15)",
+              "CodePipeline.pipelineStagesAndActionsFromGraph (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:154:48)",
+              "CodePipeline.doBuildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/codepipeline/codepipeline.js:116:14)",
+              "CodePipeline.buildPipeline (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:95:14)",
+              "CodePipeline.buildJustInTime (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:103:18)",
+              "Object.visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/pipelines/lib/main/pipeline-base.js:42:57)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:86:20)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "recurse (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:98:17)",
+              "invokeAspects (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:72:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ],
+        "/CdkPipelineStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/jsii-kernel-JXuE09/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8860:24)",
+              "/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:107",
+              "Kernel._ensureSync (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8841:28)",
+              "Kernel.invoke (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:8248:34)",
+              "KernelHost.processRequest (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9757:36)",
+              "KernelHost.run (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9720:22)",
+              "Immediate._onImmediate (/private/var/folders/85/9j8cl_29475f7q0zy9dn4z890n651k/T/tmp7tjvb290/lib/program.js:9721:46)",
+              "processImmediate (node:internal/timers:464:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkPipelineStack"
+    }
+  }
+}
