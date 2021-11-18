@@ -17,7 +17,7 @@ class CdkPipelineStack(cdk.Stack):
             id='Pipeline',
             pipeline_name=self.node.try_get_context('repo'),
             self_mutation=False,
-            synth= pipelines.ShellStep(
+            synth=pipelines.ShellStep(
                 id="cdksynth",
                 commands=[
                         "pip install -r requirements.txt",
